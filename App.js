@@ -5,12 +5,13 @@ import LoginScreen from './LoginScreen';
 import Contact from './Components/Contact'
 import ContactsScreen from './ContactsScreen';
 import SignUpForm from './SignUpForm';
+import PetScreen from './PetScreen';
 
 class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <LoginScreen />
+       < SignUpForm />
       </View>
     );
   }

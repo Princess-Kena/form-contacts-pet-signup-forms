@@ -51,13 +51,14 @@ username:{
     marginHorizontal: 40,
     borderBottomWidth:3,
     borderBottomColor:"#6308d1",
-    height:50
+    height:50, marginTop:25
 },
 fpassword:{
     alignSelf: 'flex-end',
     marginTop:15,
     color:'#3448fa',
-    marginRight:41
+    marginRight:41,
+    
 },
 loginButton:{
 justifyContent:'center',
