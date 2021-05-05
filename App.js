@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-       < SignUpForm />
+       < PetScreen/>
       </View>
     );
   }

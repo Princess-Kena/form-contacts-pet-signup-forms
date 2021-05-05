@@ -3,10 +3,10 @@ import {View, Text, Image, StyleSheet} from 'react-native';
 import { EvilIcons } from '@expo/vector-icons'; 
 
 
-const Pet = ({name, type, age, location}) => {
+const Pet = ({photo, name, type, age, location}) => {
     return (
         <View style={styles.container}>
-        <Image source={require('../assets/lad.jpg')} style={styles.image} />
+        <Image source={photo} style={styles.image} />
         <View style={styles.detailContainer}>
           <Text style={styles.textTitle} >{name}</Text>
           <Text style={styles.text}>{type}</Text>
@@ -29,10 +29,22 @@ const styles = StyleSheet.create({
  },
  detailContainer:{
      justifyContent:'center',
-     marginLeft:1,
+     alignSelf:'center',
+     shadowColor:'#000',
+     shadowOffset:{
+         height:7,
+         width:0
+     },
+         shadowOpacity:0.43,
+         elevation:15,
+         shadowRadius:9.51,
+     
+     marginLeft:0,
      flex:5,
      marginBottom:60,
-     backgroundColor:'#e9f4f5'
+     backgroundColor:'white',
+     marginTop:15,
+     borderRadius:15
      
  },
  image:{
